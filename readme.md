@@ -19,7 +19,7 @@ from dielectric permittivity and VNIR spectral features.
 ## Train
 
 ```bash
-python train_v4.py \
+python train.py \
   --csv dataset/training.csv \
   --save_dir runs/soilx \
   --epochs 5000
@@ -31,10 +31,10 @@ runs/soilx/soilx_pretrained_YYYYMMDD_HHMMSS.pth
 
 ## Inference
 ```
-python inference_v4.py \
+python inference.py \
   --csv dataset/test_lab.csv \
   --model runs/soilx/<the model file name above> \
-  --save_csv runs/soilx/preds_test_lab_v3.csv
+  --save_csv runs/soilx/<output csv file name>
 ```
 Outputs predicted columns:
 pred_M, pred_N, pred_P, pred_K, pred_C, pred_Al
