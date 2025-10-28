@@ -10,7 +10,7 @@ from dielectric permittivity and VNIR spectral features.
 
 ```bash
 git clone https://github.com/ycucm/soilx_3cl.git
-cd soilx_3CL
+cd soilx_3cl
 
 conda create -n soilx3cl python=3.9 -y
 conda activate soilx3cl
