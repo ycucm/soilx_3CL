@@ -53,3 +53,22 @@ python inference.py \
 ```
 Outputs predicted columns:
 pred_M, pred_N, pred_P, pred_K, pred_C, pred_Al
+
+### Example
+```
+python inference.py \                                       
+  --csv dataset/test_lab.csv \
+  --model runs/soilx/soilx_pretrained_20251027_194603.pth \
+  --save_csv runs/soilx/output.csv
+```
+```
+...
+[6] Evaluation metrics (MAE ± SE):
+    - M: MAE = 0.041207 ± 0.004159 (SE)
+    - N: MAE = 0.002592 ± 0.000369 (SE)
+    - P: MAE = 0.003543 ± 0.000511 (SE)
+    - K: MAE = 0.002830 ± 0.000384 (SE)
+    - C: MAE = 0.042099 ± 0.004918 (SE)
+    - Al: MAE = 0.014818 ± 0.002752 (SE)
+...
+```
