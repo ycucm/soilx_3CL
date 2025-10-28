@@ -1,9 +1,24 @@
 # SoilX 3CL
 
+##  Overview
 A contrastive learning based algorithm for predicting soil chemical concentrations (M, N, P, K, C, Al)  
 from dielectric permittivity and VNIR spectral features.
 
 ---
+
+## Environment
+
+```bash
+git clone https://github.com/ycucm/soilx_3CL.git
+cd soilx_3CL
+
+conda create -n soilx3cl python=3.9 -y
+conda activate soilx3cl
+
+# (Optional) Install PyTorch with CUDA 12.1 wheels. Use cu118 if your CUDA is 11.8.
+
+pip install -r requirements.txt
+```
 
 ## Dataset Format
 
